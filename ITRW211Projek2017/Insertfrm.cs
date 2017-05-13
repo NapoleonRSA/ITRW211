@@ -6,7 +6,6 @@ namespace ITRW211Projek2017
 {
     public partial class Insertfrm : Form
     {
-        public OleDbConnection connect;
         public double insCost;
         public int insId, insQuantity;
         public string insProduct, insCategory;
@@ -14,7 +13,6 @@ namespace ITRW211Projek2017
         public Insertfrm()
         {
             InitializeComponent();
-            connect = new OleDbConnection(Global.connString);
         }
 
 
