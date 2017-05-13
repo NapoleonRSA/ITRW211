@@ -78,6 +78,14 @@ namespace ITRW211Projek2017
             userAdd.Show();
         }
 
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StockReport stockReportForm = new StockReport();
+            stockReportForm.StartPosition = FormStartPosition.CenterScreen;
+            stockReportForm.MdiParent = this;
+            stockReportForm.Show();
+        }
+
         private void programDescritionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Version 1.0-2017\rCreated by Developers\rJaco A Vos & Danie J Schwartz ");
