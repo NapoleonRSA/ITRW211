@@ -59,7 +59,7 @@
             this.lblDiscription.AutoSize = true;
             this.lblDiscription.BackColor = System.Drawing.Color.White;
             this.lblDiscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
-            this.lblDiscription.Location = new System.Drawing.Point(36, 97);
+            this.lblDiscription.Location = new System.Drawing.Point(25, 97);
             this.lblDiscription.Name = "lblDiscription";
             this.lblDiscription.Size = new System.Drawing.Size(114, 16);
             this.lblDiscription.TabIndex = 1;
@@ -70,7 +70,7 @@
             this.lblCost.AutoSize = true;
             this.lblCost.BackColor = System.Drawing.Color.White;
             this.lblCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
-            this.lblCost.Location = new System.Drawing.Point(60, 144);
+            this.lblCost.Location = new System.Drawing.Point(25, 144);
             this.lblCost.Name = "lblCost";
             this.lblCost.Size = new System.Drawing.Size(47, 16);
             this.lblCost.TabIndex = 2;
@@ -81,7 +81,7 @@
             this.LblQuantity.AutoSize = true;
             this.LblQuantity.BackColor = System.Drawing.Color.White;
             this.LblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
-            this.LblQuantity.Location = new System.Drawing.Point(36, 186);
+            this.LblQuantity.Location = new System.Drawing.Point(25, 186);
             this.LblQuantity.Name = "LblQuantity";
             this.LblQuantity.Size = new System.Drawing.Size(72, 16);
             this.LblQuantity.TabIndex = 3;
@@ -92,7 +92,7 @@
             this.lblCat.AutoSize = true;
             this.lblCat.BackColor = System.Drawing.Color.White;
             this.lblCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold);
-            this.lblCat.Location = new System.Drawing.Point(36, 227);
+            this.lblCat.Location = new System.Drawing.Point(25, 228);
             this.lblCat.Name = "lblCat";
             this.lblCat.Size = new System.Drawing.Size(75, 16);
             this.lblCat.TabIndex = 4;
@@ -118,7 +118,7 @@
             this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
             this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.Location = new System.Drawing.Point(174, 296);
+            this.btnUpdate.Location = new System.Drawing.Point(255, 296);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(96, 35);
             this.btnUpdate.TabIndex = 6;
@@ -128,7 +128,7 @@
             // 
             // txtIdUpdate
             // 
-            this.txtIdUpdate.Location = new System.Drawing.Point(123, 46);
+            this.txtIdUpdate.Location = new System.Drawing.Point(156, 50);
             this.txtIdUpdate.Name = "txtIdUpdate";
             this.txtIdUpdate.Size = new System.Drawing.Size(75, 20);
             this.txtIdUpdate.TabIndex = 7;
@@ -144,7 +144,7 @@
             // txtCost
             // 
             this.txtCost.Enabled = false;
-            this.txtCost.Location = new System.Drawing.Point(123, 140);
+            this.txtCost.Location = new System.Drawing.Point(156, 140);
             this.txtCost.Name = "txtCost";
             this.txtCost.Size = new System.Drawing.Size(100, 20);
             this.txtCost.TabIndex = 9;
@@ -152,7 +152,7 @@
             // txtQuantity
             // 
             this.txtQuantity.Enabled = false;
-            this.txtQuantity.Location = new System.Drawing.Point(123, 186);
+            this.txtQuantity.Location = new System.Drawing.Point(156, 185);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(100, 20);
             this.txtQuantity.TabIndex = 10;
@@ -160,7 +160,7 @@
             // txtCategory
             // 
             this.txtCategory.Enabled = false;
-            this.txtCategory.Location = new System.Drawing.Point(123, 227);
+            this.txtCategory.Location = new System.Drawing.Point(156, 224);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(100, 20);
             this.txtCategory.TabIndex = 11;

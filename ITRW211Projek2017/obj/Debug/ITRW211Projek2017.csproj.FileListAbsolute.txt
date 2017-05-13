@@ -100,3 +100,4 @@ C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek201
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.LoginForm.resources
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.StockReport.resources
+C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UpdateUser.resources

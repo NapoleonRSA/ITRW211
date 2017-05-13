@@ -8,6 +8,7 @@ namespace ITRW211Projek2017
     public partial class AddandRemoveUser : Form
     {
         private readonly OleDbConnection oleDbConnection;
+        public int userID;
 
         public AddandRemoveUser()
         {
@@ -67,6 +68,22 @@ namespace ITRW211Projek2017
             var insertUser = new NewUserAddForm();
             insertUser.Show();
             Hide();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count != 0)
+            {
+                var row = dataGridView1.SelectedRows[0];
+                userID = Convert.ToInt32(row.Cells["ID"].Value);
+                UpdateUser updateForm = new UpdateUser(userID);
+                updateForm.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Please Select user to Update", "Select Error", MessageBoxButtons.OK);
+            }
         }
     }
 }

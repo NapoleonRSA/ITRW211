@@ -86,6 +86,11 @@ namespace ITRW211Projek2017
             stockReportForm.Show();
         }
 
+        private void updateUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void programDescritionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Version 1.0-2017\rCreated by Developers\rJaco A Vos & Danie J Schwartz ");
