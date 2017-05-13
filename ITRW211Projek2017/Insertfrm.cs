@@ -1,0 +1,78 @@
+﻿using System;
+using System.Data;
+using System.Data.OleDb;
+using System.Windows.Forms;
+
+namespace ITRW211Projek2017
+{
+    public partial class Insertfrm : Form
+    {
+        private readonly Form1 myForm1 = new Form1();
+        public OleDbConnection connect;
+
+        public string connString =
+            @"Provider=Microsoft.ACE.OlEDB.12.0; Data Source= E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek.accdb";
+
+        public string DBFile;
+        public int insId, insQuantity;
+        public string insProduct, insCategory;
+        public double insCost;
+
+        public Insertfrm()
+        {
+            InitializeComponent();
+            if (connect != null) connect.ConnectionString = connString;
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var costValue = double.TryParse(txtCost.Text, out insCost);
+            var quanValue = int.TryParse(txtQuantity.Text, out insQuantity);
+            if (txtProduct.Text != "" && txtCost.Text != "" && txtQuantity.Text != "" &&
+                txtCategory.Text != "")
+            {
+                if (costValue && quanValue)
+                {
+                    insProduct = txtProduct.Text;
+                    insCost = Convert.ToInt16(txtCost.Text);
+                    insQuantity = Convert.ToInt16(txtQuantity.Text);
+                    insCategory = txtCategory.Text;
+
+                    var oleDbConnection = new OleDbConnection(Global.connString);
+
+                    oleDbConnection.Open();
+                    var insert = new OleDbCommand(
+                        @"Insert Into Stock(Product,Cost,Quantity,Category)Values('" + insProduct + "'," +
+                        insCost + "," + insQuantity + ",'" + insCategory + "')", oleDbConnection);
+
+                    insert.ExecuteNonQuery();
+                    MessageBox.Show("Data inserted successfully");
+                    oleDbConnection.Close();
+
+                    ListandSearch list = new ListandSearch();
+                    this.Close();
+                    list.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid fields", "Invalid Fields", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtCost.Clear();
+                    txtQuantity.Clear();
+                    txtCost.Focus();
+                }
+               
+            }
+            else
+            {
+                MessageBox.Show("Invalid fields","Invalid Fields",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+           
+        }
+    }
+}

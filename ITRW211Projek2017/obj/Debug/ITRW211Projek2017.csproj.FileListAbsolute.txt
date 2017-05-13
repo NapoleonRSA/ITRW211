@@ -1,0 +1,85 @@
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.config
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Form1.resources
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Properties.Resources.resources
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.ListandSearch.resources
+c:\users\student\documents\visual studio 2015\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UserForm.resources
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.config
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Form1.resources
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.ListandSearch.resources
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Properties.Resources.resources
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UserForm.resources
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UpdateAndSave.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.config
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Form1.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.ListandSearch.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Properties.Resources.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UpdateAndSave.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UserForm.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
+E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Insertfrm.resources
+F:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Insertfrm.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.config
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Form1.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Insertfrm.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.ListandSearch.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Properties.Resources.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UpdateAndSave.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UserForm.resources
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
+C:\Users\jacoz\Desktop\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.config
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Form1.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Insertfrm.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.ListandSearch.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Properties.Resources.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UpdateAndSave.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UserForm.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.AddandRemoveUser.resources
+C:\Users\Student\Documents\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.NewUserAddForm.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.config
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.AddandRemoveUser.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Form1.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Insertfrm.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.ListandSearch.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.NewUserAddForm.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Properties.Resources.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UpdateAndSave.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UserForm.resources
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
+C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
