@@ -53,12 +53,12 @@ namespace ITRW211Projek2017
             connect.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var uForm = new UserForm();
-            uForm.Show();
-            Hide();
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    var uForm = new UserForm();
+        //    uForm.Show();
+        //    Hide();
+        //}
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -9,38 +9,27 @@ namespace ITRW211Projek2017
     {
         private readonly Form1 myForm1 = new Form1();
         public OleDbConnection connect;
-
-        public string connString =
-            @"Provider=Microsoft.ACE.OlEDB.12.0; Data Source= E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek.accdb";
-
         public string DBFile;
 
         public ListandSearch()
         {
             InitializeComponent();
-             connect.ConnectionString = connString;
+            connect = new OleDbConnection(Global.connString);
         }
 
         public string SearchData { get; set; }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            myForm1.connect.Open();
+            connect.Open();
 
             var adapt = new OleDbDataAdapter($@"SELECT * FROM Stock WHERE Product LIKE '%{txtSearch.Text}%'",
-                myForm1.connect);
+                connect);
             var dt = new DataTable();
             adapt.Fill(dt);
             dataGridView1.DataSource = dt;
-
-
-            myForm1.connect.Close();
+            connect.Close();
         }
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-
-        //}
 
         private void button1_Click(object sender, EventArgs e)
         {

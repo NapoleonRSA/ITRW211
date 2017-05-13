@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ITRW211Projek2017
@@ -69,7 +63,7 @@ namespace ITRW211Projek2017
         {
             oleDbConnection.Open();
 
-            var adapt = new OleDbDataAdapter($@"SELECT * FROM Users WHERE EmployeeName LIKE '%{txtUserName.Text}%'",
+            var adapt = new OleDbDataAdapter($@"SELECT * FROM Users WHERE Employee_Name LIKE '%{txtUserName.Text}%'",
                 oleDbConnection);
             var dt = new DataTable();
             adapt.Fill(dt);
