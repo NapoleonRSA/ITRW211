@@ -7,13 +7,13 @@ namespace ITRW211Projek2017
 {
     public partial class UpdateAndSave : Form
     {
-        private readonly Form1 frm1;
+        private readonly LoginForm frm1;
         private readonly HomePage home;
         private readonly OleDbConnection myDb;
         public int productId;
 
 
-        public UpdateAndSave(HomePage hp, Form1 f1)
+        public UpdateAndSave(HomePage hp, LoginForm f1)
         {
             home = hp;
             frm1 = f1;

@@ -88,7 +88,6 @@ C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\bin\Debug\ITRW211Projek201
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.AddandRemoveUser.resources
-C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Form1.resources
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Insertfrm.resources
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.ListandSearch.resources
@@ -99,3 +98,4 @@ C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek201
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
+C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.LoginForm.resources

@@ -5,13 +5,13 @@ using System.Windows.Forms;
 
 namespace ITRW211Projek2017
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
         public OleDbConnection connect;
 
         public string DBFile;
 
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
             connect = new OleDbConnection(Global.connString);
@@ -45,19 +45,12 @@ namespace ITRW211Projek2017
             }
             else
             {
-                MessageBox.Show("Incorrect credentials.Please try again");
+                MessageBox.Show("Incorrect credentials.Please try again","Error",MessageBoxButtons.OK);
                 txtUsername.Clear();
                 txtUsername.Clear();
                 txtUsername.Focus();
             }
             connect.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var uForm = new UserForm();
-            uForm.Show();
-            Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)

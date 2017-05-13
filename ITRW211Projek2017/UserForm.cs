@@ -14,7 +14,7 @@ namespace ITRW211Projek2017
     public partial class UserForm : Form
     {
         private readonly OleDbConnection myDB;
-        private readonly Form1 myForm1 = new Form1();
+        private readonly LoginForm myForm1 = new LoginForm();
         private string InvoiceNumber = "";
         private readonly Random myRandom = new Random();
 

@@ -7,7 +7,7 @@ namespace ITRW211Projek2017
 {
     public partial class ListandSearch : Form
     {
-        private readonly Form1 myForm1 = new Form1();
+        private readonly LoginForm myForm1 = new LoginForm();
         public OleDbConnection connect;
 
 

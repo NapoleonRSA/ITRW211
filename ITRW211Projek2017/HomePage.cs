@@ -6,7 +6,7 @@ namespace ITRW211Projek2017
 {
     public partial class HomePage : Form
     {
-        private readonly Form1 hForm1 = new Form1();
+        private readonly LoginForm hForm1 = new LoginForm();
         public double Cost;
         public int Id, Quantity;
         private OleDbConnection oleDbConnection;
