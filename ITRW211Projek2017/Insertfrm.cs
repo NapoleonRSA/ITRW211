@@ -6,13 +6,7 @@ namespace ITRW211Projek2017
 {
     public partial class Insertfrm : Form
     {
-        private readonly Form1 myForm1 = new Form1();
         public OleDbConnection connect;
-
-        public string connString =
-            @"Provider=Microsoft.ACE.OlEDB.12.0; Data Source= E:\ITRW\ITRW 211\ITRW211Projek2017\ITRW211Projek.accdb";
-
-        public string DBFile;
         public double insCost;
         public int insId, insQuantity;
         public string insProduct, insCategory;
@@ -20,7 +14,7 @@ namespace ITRW211Projek2017
         public Insertfrm()
         {
             InitializeComponent();
-            if (connect != null) connect.ConnectionString = connString;
+            connect = new OleDbConnection(Global.connString);
         }
 
 

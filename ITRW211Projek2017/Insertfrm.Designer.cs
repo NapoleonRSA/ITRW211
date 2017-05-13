@@ -158,7 +158,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Insertfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Insertfrm";
+            this.Text = "Add New Products";
             this.ResumeLayout(false);
             this.PerformLayout();
 
