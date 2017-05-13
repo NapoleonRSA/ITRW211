@@ -6,6 +6,8 @@ namespace ITRW211Projek2017
 {
     public partial class NewUserAddForm : Form
     {
+        Random passRandom = new Random();
+
         public NewUserAddForm()
         {
             InitializeComponent();
@@ -21,15 +23,14 @@ namespace ITRW211Projek2017
                 Naam = txtName.Text;
                 Surname = txtSurname.Text;
                 userName = Naam.Substring(0, 1) + Surname.Substring(0, 3);
-                var passRandom = new Random();
-                var intpassWord = passRandom.Next(1000, 9000);
-                passWord = Convert.ToString(intpassWord);
+                passWord = Convert.ToString(passRandom.Next(1000,9999));
                 oleDbConnection.Open();
                 var myCommand = new OleDbCommand();
                 myCommand.Connection = oleDbConnection;
-                myCommand.CommandText =
-                    "INSERT INTO Users (Employee_Name,Employee_Surname,Employee_Id,Password,Admin_rights) Values('" +
-                    Naam + "','" + Surname + "','" + userName + "','" + passWord + "'" + rdbAdmin.Checked + ")";
+                myCommand.CommandText = "INSERT INTO Users(Password) VALUES(" + passWord + ")";
+                //myCommand.CommandText =
+                //    "INSERT INTO Users (Employee_Name,Employee_Surname,Employee_Id,Admin_rights) Values('" +
+                //    Naam + "','" + Surname + "','" + userName + "'," + rdbAdmin.Checked + ")";
                 myCommand.ExecuteNonQuery();
                 MessageBox.Show("Data inserted successfully");
                 oleDbConnection.Close();
