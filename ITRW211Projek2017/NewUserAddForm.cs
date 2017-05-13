@@ -6,7 +6,7 @@ namespace ITRW211Projek2017
 {
     public partial class NewUserAddForm : Form
     {
-        Random passRandom = new Random();
+        private readonly Random passRandom = new Random();
 
         public NewUserAddForm()
         {
@@ -23,7 +23,7 @@ namespace ITRW211Projek2017
                 Naam = txtName.Text;
                 Surname = txtSurname.Text;
                 userName = Naam.Substring(0, 1) + Surname.Substring(0, 3);
-                passWord = Convert.ToString(passRandom.Next(1000,9999));
+                passWord = Convert.ToString(passRandom.Next(1000, 9999));
                 oleDbConnection.Open();
                 var myCommand = new OleDbCommand();
                 myCommand.Connection = oleDbConnection;

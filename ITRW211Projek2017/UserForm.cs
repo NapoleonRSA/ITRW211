@@ -15,11 +15,11 @@ namespace ITRW211Projek2017
     {
         private readonly OleDbConnection myDB;
         private readonly LoginForm myForm1 = new LoginForm();
-        private string InvoiceNumber = "";
         private readonly Random myRandom = new Random();
+        private readonly List<Stock> userChart = new List<Stock>();
+        private string InvoiceNumber = "";
 
         private double totalExcl;
-        private readonly List<Stock> userChart = new List<Stock>();
 
         public UserForm()
         {

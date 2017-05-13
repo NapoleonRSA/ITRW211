@@ -76,7 +76,7 @@ namespace ITRW211Projek2017
             {
                 var row = dataGridView1.SelectedRows[0];
                 userID = Convert.ToInt32(row.Cells["ID"].Value);
-                UpdateUser updateForm = new UpdateUser(userID);
+                var updateForm = new UpdateUser(userID);
                 updateForm.Show();
                 Close();
             }

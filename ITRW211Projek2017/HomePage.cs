@@ -80,7 +80,7 @@ namespace ITRW211Projek2017
 
         private void reportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StockReport stockReportForm = new StockReport();
+            var stockReportForm = new StockReport();
             stockReportForm.StartPosition = FormStartPosition.CenterScreen;
             stockReportForm.MdiParent = this;
             stockReportForm.Show();
@@ -88,7 +88,6 @@ namespace ITRW211Projek2017
 
         private void updateUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
         }
 
         private void programDescritionToolStripMenuItem_Click(object sender, EventArgs e)
