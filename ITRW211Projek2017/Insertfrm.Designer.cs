@@ -46,9 +46,9 @@
             this.button1.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(44, 163);
+            this.button1.Location = new System.Drawing.Point(26, 195);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 33);
+            this.button1.Size = new System.Drawing.Size(245, 33);
             this.button1.TabIndex = 0;
             this.button1.Text = "Insert";
             this.button1.UseVisualStyleBackColor = false;
@@ -59,7 +59,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(-1, 12);
+            this.label2.Location = new System.Drawing.Point(12, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 13);
             this.label2.TabIndex = 2;
@@ -70,7 +70,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(52, 46);
+            this.label3.Location = new System.Drawing.Point(12, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 3;
@@ -81,7 +81,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(30, 78);
+            this.label4.Location = new System.Drawing.Point(12, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 4;
@@ -92,7 +92,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(27, 115);
+            this.label5.Location = new System.Drawing.Point(12, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 5;
@@ -100,28 +100,28 @@
             // 
             // txtProduct
             // 
-            this.txtProduct.Location = new System.Drawing.Point(105, 9);
+            this.txtProduct.Location = new System.Drawing.Point(116, 32);
             this.txtProduct.Name = "txtProduct";
             this.txtProduct.Size = new System.Drawing.Size(155, 20);
             this.txtProduct.TabIndex = 7;
             // 
             // txtCost
             // 
-            this.txtCost.Location = new System.Drawing.Point(105, 43);
+            this.txtCost.Location = new System.Drawing.Point(116, 68);
             this.txtCost.Name = "txtCost";
             this.txtCost.Size = new System.Drawing.Size(155, 20);
             this.txtCost.TabIndex = 8;
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(105, 78);
+            this.txtQuantity.Location = new System.Drawing.Point(116, 104);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(155, 20);
             this.txtQuantity.TabIndex = 9;
             // 
             // txtCategory
             // 
-            this.txtCategory.Location = new System.Drawing.Point(105, 115);
+            this.txtCategory.Location = new System.Drawing.Point(116, 146);
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(155, 20);
             this.txtCategory.TabIndex = 10;
@@ -132,9 +132,9 @@
             this.button2.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(44, 202);
+            this.button2.Location = new System.Drawing.Point(26, 234);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(191, 32);
+            this.button2.Size = new System.Drawing.Size(245, 32);
             this.button2.TabIndex = 12;
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = false;
@@ -145,7 +145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.Capture;
-            this.ClientSize = new System.Drawing.Size(285, 248);
+            this.ClientSize = new System.Drawing.Size(300, 279);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.txtQuantity);

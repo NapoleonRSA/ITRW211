@@ -41,18 +41,14 @@ namespace ITRW211Projek2017
                     insCost = Convert.ToInt16(txtCost.Text);
                     insQuantity = Convert.ToInt16(txtQuantity.Text);
                     insCategory = txtCategory.Text;
-
                     var oleDbConnection = new OleDbConnection(Global.connString);
-
                     oleDbConnection.Open();
                     var insert = new OleDbCommand(
                         @"Insert Into Stock(Product,Cost,Quantity,Category)Values('" + insProduct + "'," +
                         insCost + "," + insQuantity + ",'" + insCategory + "')", oleDbConnection);
-
                     insert.ExecuteNonQuery();
                     MessageBox.Show("Data inserted successfully");
                     oleDbConnection.Close();
-
                     var list = new ListandSearch();
                     Close();
                     list.Show();
