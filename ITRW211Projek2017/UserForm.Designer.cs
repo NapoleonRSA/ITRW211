@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.dgProducts = new System.Windows.Forms.DataGridView();
             this.dgChart = new System.Windows.Forms.DataGridView();
             this.btnAddToCart = new System.Windows.Forms.Button();
@@ -66,6 +67,8 @@
             // 
             // btnAddToCart
             // 
+            this.btnAddToCart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddToCart.BackgroundImage")));
+            this.btnAddToCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAddToCart.Location = new System.Drawing.Point(583, 23);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(135, 23);
@@ -93,6 +96,7 @@
             // 
             // btnBuy
             // 
+            this.btnBuy.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.btnBuy.Location = new System.Drawing.Point(1195, 533);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(95, 44);
@@ -121,6 +125,7 @@
             // 
             // btnClear
             // 
+            this.btnClear.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.btnClear.Location = new System.Drawing.Point(9, 533);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(95, 44);
@@ -131,6 +136,8 @@
             // 
             // btnDeleteCart
             // 
+            this.btnDeleteCart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteCart.BackgroundImage")));
+            this.btnDeleteCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnDeleteCart.Location = new System.Drawing.Point(583, 52);
             this.btnDeleteCart.Name = "btnDeleteCart";
             this.btnDeleteCart.Size = new System.Drawing.Size(135, 23);
@@ -162,6 +169,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.e51b82a4d2eb9e1a4efafb5156d5689c;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1302, 590);
             this.Controls.Add(this.lblInvoiceNumber);
             this.Controls.Add(this.label2);
@@ -175,6 +184,8 @@
             this.Controls.Add(this.btnAddToCart);
             this.Controls.Add(this.dgChart);
             this.Controls.Add(this.dgProducts);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "UserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check Out";

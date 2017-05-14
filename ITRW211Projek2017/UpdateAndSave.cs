@@ -7,16 +7,12 @@ namespace ITRW211Projek2017
 {
     public partial class UpdateAndSave : Form
     {
-        private readonly LoginForm frm1;
-        private readonly HomePage home;
         private readonly OleDbConnection myDb;
         public int productId;
 
 
-        public UpdateAndSave(HomePage hp, LoginForm f1)
+        public UpdateAndSave()
         {
-            home = hp;
-            frm1 = f1;
             myDb = new OleDbConnection(Global.connString);
             InitializeComponent();
         }
@@ -74,11 +70,15 @@ namespace ITRW211Projek2017
             Category = txtCategory.Text;
             UpdateProduct(); // roep die method hier
             Close();
+
+            ListandSearch listandSearch = new ListandSearch();
+            listandSearch.Show();
         }
 
         private void UpdateAndSave_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Normal;
+            txtIdUpdate.Focus();
         }
 
         public void UpdateProduct()
@@ -86,12 +86,28 @@ namespace ITRW211Projek2017
             var update = new OleDbCommand("UPDATE Stock  SET Product = '" + Product +
                                           "', Cost = '" + Cost + "', Quantity = '" + Quantity + "', Category = '" +
                                           Category + "' WHERE ID = " + Id + "", myDb);
+            try
+            {
+                myDb.Open();
+                update.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error with updating product" + e.Message, "Failed Update", MessageBoxButtons.OK);
+            }
+            finally
+            {
+                myDb.Close();
+            }
 
-            myDb.Open();
+            MessageBox.Show("Product Updated", "Update", MessageBoxButtons.OK);
+        }
 
-            update.ExecuteNonQuery();
-
-            myDb.Close();
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+            ListandSearch listandSearch = new ListandSearch();
+            listandSearch.Show();
         }
     }
 }

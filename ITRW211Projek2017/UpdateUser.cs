@@ -19,6 +19,7 @@ namespace ITRW211Projek2017
 
         private void UpdateUser_Load(object sender, EventArgs e)
         {
+            txtName.Focus(); 
             oleDbConnection.Open();
             var adpater = new OleDbDataAdapter(@"SELECT * FROM Users WHERE ID =" + userID + "", oleDbConnection);
             var ds = new DataSet();

@@ -128,6 +128,7 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.btnUpdate.Location = new System.Drawing.Point(28, 236);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
@@ -138,6 +139,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.btnCancel.Location = new System.Drawing.Point(150, 236);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);

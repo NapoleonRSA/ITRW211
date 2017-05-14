@@ -40,8 +40,9 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.White;
+            this.btnLogin.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold);
-            this.btnLogin.Location = new System.Drawing.Point(119, 258);
+            this.btnLogin.Location = new System.Drawing.Point(128, 255);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(136, 67);
             this.btnLogin.TabIndex = 0;
@@ -107,6 +108,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Required";

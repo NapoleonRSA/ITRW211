@@ -49,6 +49,8 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnDelete.Location = new System.Drawing.Point(568, 254);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(90, 35);
@@ -76,6 +78,8 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAdd.Location = new System.Drawing.Point(331, 254);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(103, 35);
@@ -86,6 +90,8 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnUpdate.Location = new System.Drawing.Point(450, 254);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(103, 35);

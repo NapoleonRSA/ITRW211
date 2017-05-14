@@ -32,14 +32,17 @@
             this.lblNaam = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
-            this.rdbAdmin = new System.Windows.Forms.RadioButton();
+            this.rdbAdminYes = new System.Windows.Forms.RadioButton();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.rdbAdminNo = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
+            this.btnAdd.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAdd.Location = new System.Drawing.Point(43, 144);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
@@ -75,16 +78,16 @@
             this.lblAdmin.TabIndex = 3;
             this.lblAdmin.Text = "Admin RIghts";
             // 
-            // rdbAdmin
+            // rdbAdminYes
             // 
-            this.rdbAdmin.AutoSize = true;
-            this.rdbAdmin.Location = new System.Drawing.Point(134, 93);
-            this.rdbAdmin.Name = "rdbAdmin";
-            this.rdbAdmin.Size = new System.Drawing.Size(94, 17);
-            this.rdbAdmin.TabIndex = 4;
-            this.rdbAdmin.TabStop = true;
-            this.rdbAdmin.Text = "Admin Yes/No";
-            this.rdbAdmin.UseVisualStyleBackColor = true;
+            this.rdbAdminYes.AutoSize = true;
+            this.rdbAdminYes.Location = new System.Drawing.Point(134, 93);
+            this.rdbAdminYes.Name = "rdbAdminYes";
+            this.rdbAdminYes.Size = new System.Drawing.Size(43, 17);
+            this.rdbAdminYes.TabIndex = 4;
+            this.rdbAdminYes.TabStop = true;
+            this.rdbAdminYes.Text = "Yes";
+            this.rdbAdminYes.UseVisualStyleBackColor = true;
             // 
             // txtSurname
             // 
@@ -102,6 +105,8 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnCancel.Location = new System.Drawing.Point(153, 144);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -110,16 +115,28 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // rdbAdminNo
+            // 
+            this.rdbAdminNo.AutoSize = true;
+            this.rdbAdminNo.Location = new System.Drawing.Point(195, 93);
+            this.rdbAdminNo.Name = "rdbAdminNo";
+            this.rdbAdminNo.Size = new System.Drawing.Size(39, 17);
+            this.rdbAdminNo.TabIndex = 8;
+            this.rdbAdminNo.TabStop = true;
+            this.rdbAdminNo.Text = "No";
+            this.rdbAdminNo.UseVisualStyleBackColor = true;
+            // 
             // NewUserAddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.Capture;
-            this.ClientSize = new System.Drawing.Size(284, 179);
+            this.ClientSize = new System.Drawing.Size(261, 179);
+            this.Controls.Add(this.rdbAdminNo);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtSurname);
-            this.Controls.Add(this.rdbAdmin);
+            this.Controls.Add(this.rdbAdminYes);
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblNaam);
@@ -138,9 +155,10 @@
         private System.Windows.Forms.Label lblNaam;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Label lblAdmin;
-        private System.Windows.Forms.RadioButton rdbAdmin;
+        private System.Windows.Forms.RadioButton rdbAdminYes;
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.RadioButton rdbAdminNo;
     }
 }

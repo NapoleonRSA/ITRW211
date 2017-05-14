@@ -41,6 +41,7 @@
             this.txtCost = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtCategory = new System.Windows.Forms.TextBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblId
@@ -102,9 +103,9 @@
             // 
             this.btnFind.BackColor = System.Drawing.Color.White;
             this.btnFind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFind.BackgroundImage")));
-            this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.btnFind.Location = new System.Drawing.Point(70, 296);
+            this.btnFind.Location = new System.Drawing.Point(41, 296);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(98, 35);
             this.btnFind.TabIndex = 5;
@@ -115,12 +116,12 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.White;
-            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdate.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
+            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.Location = new System.Drawing.Point(255, 296);
+            this.btnUpdate.Location = new System.Drawing.Point(159, 296);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(96, 35);
+            this.btnUpdate.Size = new System.Drawing.Size(97, 35);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -165,12 +166,27 @@
             this.txtCategory.Size = new System.Drawing.Size(100, 20);
             this.txtCategory.TabIndex = 11;
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
+            this.btnClose.Location = new System.Drawing.Point(280, 296);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(97, 35);
+            this.btnClose.TabIndex = 12;
+            this.btnClose.Text = "Cancel";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // UpdateAndSave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.Capture;
             this.ClientSize = new System.Drawing.Size(412, 354);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtCost);
@@ -206,5 +222,6 @@
         private System.Windows.Forms.TextBox txtCost;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtCategory;
+        private System.Windows.Forms.Button btnClose;
     }
 }

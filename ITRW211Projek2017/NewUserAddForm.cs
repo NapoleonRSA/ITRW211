@@ -17,6 +17,15 @@ namespace ITRW211Projek2017
         {
             string Naam, Surname, userName;
             string passWord;
+            bool isAdmin = false;
+            if (rdbAdminYes.Checked)
+            {
+                isAdmin = true;
+            }
+            else if (rdbAdminNo.Checked)
+            {
+                isAdmin = false;
+            }
             var oleDbConnection = new OleDbConnection(Global.connString);
             if (txtName.Text != "" && txtSurname.Text != "")
             {
@@ -30,7 +39,7 @@ namespace ITRW211Projek2017
                 myCommand.CommandText = "INSERT INTO Users(Password) VALUES(" + passWord + ")";
                 //myCommand.CommandText =
                 //    "INSERT INTO Users (Employee_Name,Employee_Surname,Employee_Id,Admin_rights) Values('" +
-                //    Naam + "','" + Surname + "','" + userName + "'," + rdbAdmin.Checked + ")";
+                //    Naam + "','" + Surname + "','" + userName + "'," + isAdmin + ")";
                 myCommand.ExecuteNonQuery();
                 MessageBox.Show("Data inserted successfully");
                 oleDbConnection.Close();

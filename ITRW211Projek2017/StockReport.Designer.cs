@@ -43,6 +43,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
             this.btnClose.Location = new System.Drawing.Point(511, 297);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(84, 30);
@@ -55,9 +56,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.Capture;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(607, 335);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dataGridView1);
+            this.DoubleBuffered = true;
             this.Name = "StockReport";
             this.Text = "StockReport";
             this.Load += new System.EventHandler(this.StockReport_Load);

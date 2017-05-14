@@ -15,6 +15,10 @@ namespace ITRW211Projek2017
             InitializeComponent();
         }
 
+        private void Insertfrm_Load(object sender, EventArgs e)
+        {
+            txtProduct.Focus();
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {

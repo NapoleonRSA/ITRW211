@@ -44,7 +44,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(26, 195);
             this.button1.Name = "button1";
@@ -130,7 +130,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(26, 234);
             this.button2.Name = "button2";
@@ -156,9 +156,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Insertfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Products";
+            this.Load += new System.EventHandler(this.Insertfrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

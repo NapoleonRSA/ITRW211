@@ -50,7 +50,7 @@ namespace ITRW211Projek2017
 
         private void updateProductsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var updateProduct = new UpdateAndSave(this, hForm1);
+            var updateProduct = new UpdateAndSave();
             updateProduct.StartPosition = FormStartPosition.CenterScreen;
             updateProduct.MdiParent = this;
             updateProduct.Show();
