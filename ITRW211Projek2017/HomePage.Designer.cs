@@ -38,6 +38,7 @@
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addAndRemoveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -121,7 +122,8 @@
             // purchaseToolStripMenuItem
             // 
             this.purchaseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkOutToolStripMenuItem});
+            this.checkOutToolStripMenuItem,
+            this.openInvoiceToolStripMenuItem});
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
             this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.purchaseToolStripMenuItem.Text = "Purchase";
@@ -129,9 +131,16 @@
             // checkOutToolStripMenuItem
             // 
             this.checkOutToolStripMenuItem.Name = "checkOutToolStripMenuItem";
-            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.checkOutToolStripMenuItem.Text = "Check out";
             this.checkOutToolStripMenuItem.Click += new System.EventHandler(this.checkOutToolStripMenuItem_Click);
+            // 
+            // openInvoiceToolStripMenuItem
+            // 
+            this.openInvoiceToolStripMenuItem.Name = "openInvoiceToolStripMenuItem";
+            this.openInvoiceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openInvoiceToolStripMenuItem.Text = "Open Invoice";
+            this.openInvoiceToolStripMenuItem.Click += new System.EventHandler(this.openInvoiceToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
@@ -218,5 +227,6 @@
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addAndRemoveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openInvoiceToolStripMenuItem;
     }
 }

@@ -129,7 +129,7 @@
             // btnUpdate
             // 
             this.btnUpdate.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
-            this.btnUpdate.Location = new System.Drawing.Point(28, 236);
+            this.btnUpdate.Location = new System.Drawing.Point(28, 213);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 10;
@@ -140,7 +140,7 @@
             // btnCancel
             // 
             this.btnCancel.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.images__1_;
-            this.btnCancel.Location = new System.Drawing.Point(150, 236);
+            this.btnCancel.Location = new System.Drawing.Point(140, 213);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 11;
@@ -165,7 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::ITRW211Projek2017.Properties.Resources.Capture;
-            this.ClientSize = new System.Drawing.Size(283, 287);
+            this.ClientSize = new System.Drawing.Size(260, 264);
             this.Controls.Add(this.rdbAdminNo);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnUpdate);

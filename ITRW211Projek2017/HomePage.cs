@@ -90,6 +90,14 @@ namespace ITRW211Projek2017
         {
         }
 
+        private void openInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            invoiceForm showInvoiceForm = new invoiceForm();
+            showInvoiceForm.StartPosition = FormStartPosition.CenterScreen;
+            showInvoiceForm.MdiParent = this;
+            showInvoiceForm.Show();
+        }
+
         private void programDescritionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Version 1.0-2017\rCreated by Developers\rJaco A Vos & Danie J Schwartz ");

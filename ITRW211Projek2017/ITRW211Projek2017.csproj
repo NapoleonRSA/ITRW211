@@ -47,6 +47,12 @@
     <Compile Include="AddandRemoveUser.Designer.cs">
       <DependentUpon>AddandRemoveUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="invoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoiceForm.Designer.cs">
+      <DependentUpon>invoiceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </Compile>
     <EmbeddedResource Include="AddandRemoveUser.resx">
       <DependentUpon>AddandRemoveUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoiceForm.resx">
+      <DependentUpon>invoiceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

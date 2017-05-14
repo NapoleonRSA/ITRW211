@@ -63,7 +63,7 @@
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
             this.Name = "StockReport";
-            this.Text = "StockReport";
+            this.Text = "Low Stock Report";
             this.Load += new System.EventHandler(this.StockReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
