@@ -45,7 +45,7 @@ namespace ITRW211Projek2017
             }
             else
             {
-                MessageBox.Show("Incorrect credentials.Please try again", "Error", MessageBoxButtons.OK);
+                MessageBox.Show("Incorrect credentials.Please try again", "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 txtUsername.Clear();
                 txtUsername.Clear();
                 txtUsername.Focus();

@@ -9,6 +9,7 @@ namespace ITRW211Projek2017
     {
         private readonly LoginForm myForm1 = new LoginForm();
         public OleDbConnection connect;
+        private int productId;
 
 
         public string DBFile;
@@ -112,6 +113,22 @@ namespace ITRW211Projek2017
             var inForm = new Insertfrm();
             inForm.Show();
             Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count != 0)
+            {
+                var row = dataGridView1.SelectedRows[0];
+                productId = Convert.ToInt32(row.Cells["ID"].Value);
+                var updateForm = new UpdateAndSave(productId);
+                updateForm.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Please Select user to Update", "Select Error", MessageBoxButtons.OK);
+            }
         }
     }
 }

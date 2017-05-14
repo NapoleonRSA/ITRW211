@@ -43,7 +43,7 @@ namespace ITRW211Projek2017
                         @"Insert Into Stock(Product,Cost,Quantity,Category)Values('" + insProduct + "'," +
                         insCost + "," + insQuantity + ",'" + insCategory + "')", oleDbConnection);
                     insert.ExecuteNonQuery();
-                    MessageBox.Show("Data inserted successfully");
+                    MessageBox.Show("Data inserted successfully","Database Update",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                     oleDbConnection.Close();
                     var list = new ListandSearch();
                     Close();

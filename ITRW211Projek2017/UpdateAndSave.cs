@@ -11,10 +11,16 @@ namespace ITRW211Projek2017
         public int productId;
 
 
-        public UpdateAndSave()
+        public UpdateAndSave(int prodId)
         {
             myDb = new OleDbConnection(Global.connString);
             InitializeComponent();
+            productId = prodId;
+        }
+
+        public UpdateAndSave()
+        {
+            throw new NotImplementedException();
         }
 
         public string Category { get; set; }
@@ -27,65 +33,84 @@ namespace ITRW211Projek2017
 
         public short Id { get; set; }
 
-        private void btnFind_Click(object sender, EventArgs e)
-        {
-            if (txtIdUpdate.Text != "")
-            {
-                productId = Convert.ToInt16(txtIdUpdate.Text);
-                myDb.Open();
-                var adpater =
-                    new OleDbDataAdapter(@"SELECT * FROM Stock WHERE ID =" + txtIdUpdate.Text + "", myDb);
-                var dtSet = new DataSet();
-                adpater.Fill(dtSet, "List");
-                var dTable = dtSet.Tables[0];
-                foreach (DataRow dtRow in dTable.Rows)
-                {
-                    txtProductName.Text = dtRow["Product"].ToString();
-                    txtCost.Text = dtRow["Cost"].ToString();
-                    txtQuantity.Text = dtRow["Quantity"].ToString();
-                    txtCategory.Text = dtRow["Category"].ToString();
-                }
-                myDb.Close();
-            }
-            else
-            {
-                MessageBox.Show("Please enter valid Product Id.", "No Product Selected", MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
-            }
+        //private void btnFind_Click(object sender, EventArgs e)
+        //{
+        //    if (txtIdUpdate.Text != "")
+        //    {
+        //        myDb.Open();
+        //        var adpater =
+        //            new OleDbDataAdapter(@"SELECT * FROM Stock WHERE ID =" + productId + "", myDb);
+        //        var dtSet = new DataSet();
+        //        adpater.Fill(dtSet, "List");
+        //        var dTable = dtSet.Tables[0];
+        //        foreach (DataRow dtRow in dTable.Rows)
+        //        {
+        //            txtProductName.Text = dtRow["Product"].ToString();
+        //            txtCost.Text = dtRow["Cost"].ToString();
+        //            txtQuantity.Text = dtRow["Quantity"].ToString();
+        //            txtCategory.Text = dtRow["Category"].ToString();
+        //        }
+        //        myDb.Close();
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Please enter valid Product Id.", "No Product Selected", MessageBoxButtons.OK,
+        //            MessageBoxIcon.Error);
+        //    }
 
 
-            txtIdUpdate.Enabled = false;
-            txtProductName.Enabled = true;
-            txtCost.Enabled = true;
-            txtQuantity.Enabled = true;
-            txtCategory.Enabled = true;
-        }
+        //    txtProductName.Enabled = true;
+        //    txtCost.Enabled = true;
+        //    txtQuantity.Enabled = true;
+        //    txtCategory.Enabled = true;
+        //}
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Id = Convert.ToInt16(txtIdUpdate.Text);
-            Product = txtProductName.Text;
-            Cost = double.Parse(txtCost.Text);
-            Quantity = int.Parse(txtQuantity.Text);
-            Category = txtCategory.Text;
-            UpdateProduct(); // roep die method hier
-            Close();
+            if (txtProductName.Text != "" && txtCost.Text != "" && txtCategory.Text != "" && txtQuantity.Text != "")
+            {
+                Product = txtProductName.Text;
+                Cost = double.Parse(txtCost.Text);
+                Quantity = int.Parse(txtQuantity.Text);
+                Category = txtCategory.Text;
+                UpdateProduct(); // roep die method hier
+                Close();
 
-            ListandSearch listandSearch = new ListandSearch();
-            listandSearch.Show();
+                ListandSearch listandSearch = new ListandSearch();
+                listandSearch.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please enter values into all field", "Missing Entry", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            
         }
 
         private void UpdateAndSave_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Normal;
-            txtIdUpdate.Focus();
+            myDb.Open();
+            var adpater =
+                new OleDbDataAdapter(@"SELECT * FROM Stock WHERE ID =" + productId + "", myDb);
+            var dtSet = new DataSet();
+            adpater.Fill(dtSet, "List");
+            var dTable = dtSet.Tables[0];
+            foreach (DataRow dtRow in dTable.Rows)
+            {
+                txtProductName.Text = dtRow["Product"].ToString();
+                txtCost.Text = dtRow["Cost"].ToString();
+                txtQuantity.Text = dtRow["Quantity"].ToString();
+                txtCategory.Text = dtRow["Category"].ToString();
+            }
+            myDb.Close();
         }
 
         public void UpdateProduct()
         {
             var update = new OleDbCommand("UPDATE Stock  SET Product = '" + Product +
                                           "', Cost = '" + Cost + "', Quantity = '" + Quantity + "', Category = '" +
-                                          Category + "' WHERE ID = " + Id + "", myDb);
+                                          Category + "' WHERE ID = " + productId + "", myDb);
             try
             {
                 myDb.Open();
@@ -93,14 +118,14 @@ namespace ITRW211Projek2017
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error with updating product" + e.Message, "Failed Update", MessageBoxButtons.OK);
+                MessageBox.Show("Error with updating product" + e.Message, "Failed Update", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             finally
             {
                 myDb.Close();
             }
 
-            MessageBox.Show("Product Updated", "Update", MessageBoxButtons.OK);
+            MessageBox.Show("Product Updated", "Update", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
         }
 
         private void btnClose_Click(object sender, EventArgs e)

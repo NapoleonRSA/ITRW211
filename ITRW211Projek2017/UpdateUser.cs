@@ -51,9 +51,9 @@ namespace ITRW211Projek2017
                 myCommand.Connection = oleDbConnection;
                 myCommand.CommandText = "Update Users set Employee_Name = '" + txtName.Text + "',Employee_Surname ='" +
                                         txtSurname.Text + "',Employee_Id = '" + txtUsername.Text
-                                        + "',Admin_rights = " + isAdmin + " WHERE ID =" + userID + "";
+                                        + "',Admin_rights = " + isAdmin + ",Employee_Password ='"+txtPassword.Text+"' WHERE ID =" + userID + "";
                 myCommand.ExecuteNonQuery();
-                MessageBox.Show("Data inserted successfully");
+                MessageBox.Show("Data inserted successfully","Database Updated",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 oleDbConnection.Close();
 
                 Hide();

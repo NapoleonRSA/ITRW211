@@ -6,13 +6,13 @@
         public static bool Admin = false;
 
         public static string connString =
-                @"Provider=Microsoft.ACE.OlEDB.12.0; Data Source= C:\Development\ITRW211\ITRW211Projek.accdb"
+                @"Provider=Microsoft.ACE.OlEDB.12.0; Data Source= C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek.accdb"
             ;
 
         public static string userLoginInfoFile =
-            @"C:\Development\ITRW211\Login.txt";
+            @"C:\Users\Danie\Source\Repos\ITRW211\Login.txt";
 
         public static string invoiceLocation =
-            @"C:\Development\ITRW211\ITRW211Projek2017\";
+            @"C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\";
     }
 }
