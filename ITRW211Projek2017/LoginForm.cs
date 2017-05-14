@@ -22,9 +22,9 @@ namespace ITRW211Projek2017
             connect.Open();
             var command =
                 new OleDbCommand(
-                    "SELECT * from Users where Employee_Id= '" + txtUsername.Text + "' AND Password= '" +
-                    txtPasword.Text +
-                    "'", connect);
+                    "SELECT * from Users where Employee_Id= '" + txtUsername.Text + "' AND Employee_Password= " +
+                    Convert.ToInt16(txtPasword.Text) +
+                    "", connect);
             var reader = command.ExecuteReader();
             if (reader.Read())
             {

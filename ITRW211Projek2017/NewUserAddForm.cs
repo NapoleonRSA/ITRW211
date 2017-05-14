@@ -16,7 +16,7 @@ namespace ITRW211Projek2017
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string Naam, Surname, userName;
-            string passWord;
+            int passWord;
             bool isAdmin = false;
             if (rdbAdminYes.Checked)
             {
@@ -32,16 +32,15 @@ namespace ITRW211Projek2017
                 Naam = txtName.Text;
                 Surname = txtSurname.Text;
                 userName = Naam.Substring(0, 1) + Surname.Substring(0, 3);
-                passWord = Convert.ToString(passRandom.Next(1000, 9999));
+                passWord = passRandom.Next(1000, 9999);
                 oleDbConnection.Open();
                 var myCommand = new OleDbCommand();
                 myCommand.Connection = oleDbConnection;
-                myCommand.CommandText = "INSERT INTO Users(Password) VALUES(" + passWord + ")";
-                //myCommand.CommandText =
-                //    "INSERT INTO Users (Employee_Name,Employee_Surname,Employee_Id,Admin_rights) Values('" +
-                //    Naam + "','" + Surname + "','" + userName + "'," + isAdmin + ")";
+                myCommand.CommandText =
+                    "INSERT INTO Users (Employee_Name,Employee_Surname,Employee_Id,Admin_rights,Employee_Password) Values ('" +
+                    Naam + "','" + Surname + "','" + userName + "'," + isAdmin + ","+ passWord +")";
                 myCommand.ExecuteNonQuery();
-                MessageBox.Show("Data inserted successfully");
+                MessageBox.Show("Data inserted successfully","Inserted Data",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 oleDbConnection.Close();
 
                 Hide();

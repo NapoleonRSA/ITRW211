@@ -34,7 +34,7 @@ namespace ITRW211Projek2017
                     rdbAdminYes.Checked = true;
                 else
                     rdbAdminNo.Checked = true;
-                txtPassword.Text = dtRow["Password"].ToString();
+                txtPassword.Text = dtRow["Employee_Password"].ToString();
             }
             oleDbConnection.Close();
         }
@@ -52,9 +52,6 @@ namespace ITRW211Projek2017
                 myCommand.CommandText = "Update Users set Employee_Name = '" + txtName.Text + "',Employee_Surname ='" +
                                         txtSurname.Text + "',Employee_Id = '" + txtUsername.Text
                                         + "',Admin_rights = " + isAdmin + " WHERE ID =" + userID + "";
-                //myCommand.CommandText =
-                //    "INSERT INTO Users (Employee_Name,Employee_Surname,Employee_Id,Admin_rights) Values('" +
-                //    Naam + "','" + Surname + "','" + userName + "'," + rdbAdmin.Checked + ")";
                 myCommand.ExecuteNonQuery();
                 MessageBox.Show("Data inserted successfully");
                 oleDbConnection.Close();
