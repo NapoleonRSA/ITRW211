@@ -86,7 +86,6 @@ C:\Users\Danie\Documents\Visual Studio 2017\Projects\ITRW211Projek2017\ITRW211Pr
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.config
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.pdb
-C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.AddandRemoveUser.resources
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.HomePage.resources
 C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.Insertfrm.resources
@@ -121,3 +120,8 @@ C:\Development\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.UserForm.re
 C:\Development\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csproj.GenerateResource.Cache
 C:\Development\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe
 C:\Development\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.pdb
+C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.exe.manifest
+C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\bin\Debug\ITRW211Projek2017.application
+C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.exe.manifest
+C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.application
+C:\Users\Danie\Source\Repos\ITRW211\ITRW211Projek2017\obj\Debug\ITRW211Projek2017.csprojResolveAssemblyReference.cache
