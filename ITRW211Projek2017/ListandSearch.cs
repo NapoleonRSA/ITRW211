@@ -36,25 +36,11 @@ namespace ITRW211Projek2017
             connect.Close();
         }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-
-        //}
 
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
-
-
-        //private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    //if (openFileDialog1.ShowDialog() == DialogResult.OK)
-        //    //{
-        //    //    DBFile = openFileDialog1.FileName;
-        //    //}
-        //    //connect = new OleDbConnection(connString + DBFile);
-        //}
 
 
         private void ListandSearch_Load(object sender, EventArgs e)
@@ -104,6 +90,9 @@ namespace ITRW211Projek2017
                     adapt.Fill(dt);
                     dataGridView1.DataSource = dt;
                     oleDbConnection.Close();
+                    var list = new ListandSearch();
+                    Close();
+                    list.Show();
                 }
             }
         }

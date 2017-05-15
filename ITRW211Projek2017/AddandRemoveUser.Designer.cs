@@ -113,7 +113,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.dataGridView1);
             this.Name = "AddandRemoveUser";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add and Remove User";
             this.Load += new System.EventHandler(this.AddandRemoveUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

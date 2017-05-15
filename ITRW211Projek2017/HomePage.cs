@@ -9,13 +9,11 @@ namespace ITRW211Projek2017
         private readonly LoginForm hForm1 = new LoginForm();
         public double Cost;
         public int Id, Quantity;
-        private OleDbConnection oleDbConnection;
         public string Product, Category;
 
         public HomePage()
         {
             InitializeComponent();
-            oleDbConnection = new OleDbConnection(Global.connString);
         }
 
         private void HomePage_Load(object sender, EventArgs e)
@@ -27,14 +25,7 @@ namespace ITRW211Projek2017
             }
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void productsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
+     
         private void listProductsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var listfrm = new ListandSearch();
@@ -48,13 +39,6 @@ namespace ITRW211Projek2017
             Application.Exit();
         }
 
-        private void updateProductsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var updateProduct = new UpdateAndSave();
-            updateProduct.StartPosition = FormStartPosition.CenterScreen;
-            updateProduct.MdiParent = this;
-            updateProduct.Show();
-        }
 
         private void checkOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -86,10 +70,7 @@ namespace ITRW211Projek2017
             stockReportForm.Show();
         }
 
-        private void updateUserToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
+       
         private void openInvoiceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             invoiceForm showInvoiceForm = new invoiceForm();
