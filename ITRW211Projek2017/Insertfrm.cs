@@ -22,6 +22,8 @@ namespace ITRW211Projek2017
 
         private void button2_Click(object sender, EventArgs e)
         {
+            var inForm = new Insertfrm();
+            inForm.Show();
             Close();
         }
 

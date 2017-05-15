@@ -100,7 +100,7 @@ namespace ITRW211Projek2017
 
         private void programDescritionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Version 1.0-2017\rCreated by Developers\rJaco A Vos & Danie J Schwartz ");
+            MessageBox.Show("Version 1.0-2017\rCreated by Developers\rJaco A Vos & Danie J Schwartz ","About App",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void legalNoticeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,7 +109,7 @@ namespace ITRW211Projek2017
                             "All company, product and service names used in this website are for identification" +
                             " purposes only. Use of these names, logos, and brands does not imply endorsement.",
                 "Legal",
-                MessageBoxButtons.OK);
+                MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }

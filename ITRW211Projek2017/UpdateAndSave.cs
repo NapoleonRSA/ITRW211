@@ -33,37 +33,6 @@ namespace ITRW211Projek2017
 
         public short Id { get; set; }
 
-        //private void btnFind_Click(object sender, EventArgs e)
-        //{
-        //    if (txtIdUpdate.Text != "")
-        //    {
-        //        myDb.Open();
-        //        var adpater =
-        //            new OleDbDataAdapter(@"SELECT * FROM Stock WHERE ID =" + productId + "", myDb);
-        //        var dtSet = new DataSet();
-        //        adpater.Fill(dtSet, "List");
-        //        var dTable = dtSet.Tables[0];
-        //        foreach (DataRow dtRow in dTable.Rows)
-        //        {
-        //            txtProductName.Text = dtRow["Product"].ToString();
-        //            txtCost.Text = dtRow["Cost"].ToString();
-        //            txtQuantity.Text = dtRow["Quantity"].ToString();
-        //            txtCategory.Text = dtRow["Category"].ToString();
-        //        }
-        //        myDb.Close();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Please enter valid Product Id.", "No Product Selected", MessageBoxButtons.OK,
-        //            MessageBoxIcon.Error);
-        //    }
-
-
-        //    txtProductName.Enabled = true;
-        //    txtCost.Enabled = true;
-        //    txtQuantity.Enabled = true;
-        //    txtCategory.Enabled = true;
-        //}
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
