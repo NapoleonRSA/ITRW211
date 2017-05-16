@@ -47,6 +47,10 @@ namespace ITRW211Projek2017
 
                     update.ExecuteNonQuery();
                     oleDbConnection.Close();
+                    var addRemoveAndUpdate = new AddandRemoveUser();
+                    Close();
+                    addRemoveAndUpdate.Show();
+
                 }
             }
         }
