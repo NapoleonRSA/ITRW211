@@ -59,7 +59,7 @@ namespace ITRW211Projek2017
         {
             oleDbConnection.Open();
 
-            var adapt = new OleDbDataAdapter($@"SELECT * FROM Users WHERE Employee_Name LIKE '%{txtUserName.Text}%'",
+            var adapt = new OleDbDataAdapter($@"SELECT * FROM Users WHERE Employee_Name LIKE '%{txtUserName.Text}%' OR Employee_Surname LIKE '%{txtUserName.Text}%'",
                 oleDbConnection);
             var dt = new DataTable();
             adapt.Fill(dt);

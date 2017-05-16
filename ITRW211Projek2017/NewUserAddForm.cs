@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.OleDb;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ITRW211Projek2017
@@ -26,8 +27,26 @@ namespace ITRW211Projek2017
             {
                 isAdmin = false;
             }
+
+            if (!Validation.EmployeeName(txtName.Text))
+            {
+                lblNaam.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblNaam.ForeColor = Color.Black;
+            }
+
+            if (!Validation.EmployeeSurname(txtSurname.Text))
+            {
+                lblSurname.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblSurname.ForeColor = Color.Black;
+            }
             var oleDbConnection = new OleDbConnection(Global.connString);
-            if (txtName.Text != "" && txtSurname.Text != "")
+            if (Validation.EmployeeName(txtName.Text) && Validation.EmployeeSurname(txtSurname.Text))
             {
                 Naam = txtName.Text;
                 Surname = txtSurname.Text;
@@ -46,6 +65,11 @@ namespace ITRW211Projek2017
                 Hide();
                 var form = new AddandRemoveUser();
                 form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please enter values into all field", "Error in field", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 

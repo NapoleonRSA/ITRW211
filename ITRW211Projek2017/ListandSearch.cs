@@ -26,14 +26,14 @@ namespace ITRW211Projek2017
         {
             connect.Open();
 
-            var adapt = new OleDbDataAdapter($@"SELECT * FROM Stock WHERE Product LIKE '%{txtSearch.Text}%'",
+            var adapt = new OleDbDataAdapter($@"SELECT * FROM Stock WHERE Product LIKE '%{txtSearch.Text}%' OR Category LIKE '%{txtSearch.Text}%'",
                 myForm1.connect);
             var dt = new DataTable();
             adapt.Fill(dt);
             dataGridView1.DataSource = dt;
-
-
             connect.Close();
+            dataGridView1.Columns[2].DefaultCellStyle.Format = "c";
+
         }
 
 
@@ -56,6 +56,7 @@ namespace ITRW211Projek2017
             dataGridView1.DataSource = ds;
             dataGridView1.DataMember = "Stock";
             myForm1.connect.Close();
+            dataGridView1.Columns[2].DefaultCellStyle.Format = "c";
         }
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)

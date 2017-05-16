@@ -39,7 +39,7 @@ namespace ITRW211Projek2017
             if (txtProductName.Text != "" && txtCost.Text != "" && txtCategory.Text != "" && txtQuantity.Text != "")
             {
                 Product = txtProductName.Text;
-                Cost = double.Parse(txtCost.Text);
+                Cost = double.Parse(txtCost.Text.Replace('.',','));
                 Quantity = int.Parse(txtQuantity.Text);
                 Category = txtCategory.Text;
                 UpdateProduct(); // roep die method hier

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblProduct = new System.Windows.Forms.Label();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblCategory = new System.Windows.Forms.Label();
             this.txtProduct = new System.Windows.Forms.TextBox();
             this.txtCost = new System.Windows.Forms.TextBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
@@ -54,49 +54,50 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // lblProduct
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(12, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Product name:";
+            this.lblProduct.AutoSize = true;
+            this.lblProduct.BackColor = System.Drawing.Color.White;
+            this.lblProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblProduct.ForeColor = System.Drawing.Color.Black;
+            this.lblProduct.Location = new System.Drawing.Point(12, 39);
+            this.lblProduct.Name = "lblProduct";
+            this.lblProduct.Size = new System.Drawing.Size(89, 13);
+            this.lblProduct.TabIndex = 2;
+            this.lblProduct.Text = "Product name:";
             // 
-            // label3
+            // lblCost
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(12, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Cost:";
+            this.lblCost.AutoSize = true;
+            this.lblCost.BackColor = System.Drawing.Color.White;
+            this.lblCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblCost.Location = new System.Drawing.Point(12, 71);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(36, 13);
+            this.lblCost.TabIndex = 3;
+            this.lblCost.Text = "Cost:";
             // 
-            // label4
+            // lblQuantity
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(12, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Quantity:";
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.BackColor = System.Drawing.Color.White;
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblQuantity.Location = new System.Drawing.Point(12, 111);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(58, 13);
+            this.lblQuantity.TabIndex = 4;
+            this.lblQuantity.Text = "Quantity:";
             // 
-            // label5
+            // lblCategory
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(12, 146);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Category:";
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.BackColor = System.Drawing.Color.White;
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.lblCategory.Location = new System.Drawing.Point(12, 146);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(61, 13);
+            this.lblCategory.TabIndex = 5;
+            this.lblCategory.Text = "Category:";
             // 
             // txtProduct
             // 
@@ -151,10 +152,10 @@
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtCost);
             this.Controls.Add(this.txtProduct);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCategory);
+            this.Controls.Add(this.lblQuantity);
+            this.Controls.Add(this.lblCost);
+            this.Controls.Add(this.lblProduct);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Insertfrm";
@@ -169,10 +170,10 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblProduct;
+        private System.Windows.Forms.Label lblCost;
+        private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.TextBox txtProduct;
         private System.Windows.Forms.TextBox txtCost;
         private System.Windows.Forms.TextBox txtQuantity;

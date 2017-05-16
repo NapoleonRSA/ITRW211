@@ -36,6 +36,7 @@ namespace ITRW211Projek2017
             dgProducts.DataSource = ds;
             dgProducts.DataMember = "Stock";
             myForm1.connect.Close();
+            dgProducts.Columns[2].DefaultCellStyle.Format = "c";
             btnBuy.Enabled = false;
             btnDeleteCart.Enabled = false;
 
@@ -52,6 +53,7 @@ namespace ITRW211Projek2017
             adapt.Fill(dt);
             dgProducts.DataSource = dt;
             myDB.Close();
+            dgProducts.Columns[2].DefaultCellStyle.Format = "c";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -111,7 +113,7 @@ namespace ITRW211Projek2017
                 btnBuy.Enabled = true;
                 btnDeleteCart.Enabled = true;
             }
-
+            dgChart.Columns[2].DefaultCellStyle.Format = "c";
             lblPrice.Text = string.Format("{0:c}", totalExcl);
         }
 
@@ -206,10 +208,15 @@ namespace ITRW211Projek2017
                         }
                     userChart.Remove(stockToRemove);
                 }
-
+             
                 var BindingList = new BindingList<Stock>(userChart);
                 var source = new BindingSource(BindingList, null);
                 dgChart.DataSource = source;
+
+                if (BindingList.Count == 0)
+                {
+                    btnBuy.Enabled = false;
+                }
 
                 lblPrice.Text = string.Format("{0:c}", totalExcl);
             }

@@ -24,6 +24,7 @@ namespace ITRW211Projek2017
             dataGridView1.DataSource = ds;
             dataGridView1.DataMember = "Stock";
             connect.Close();
+            dataGridView1.Columns[2].DefaultCellStyle.Format = "c";
         }
 
         private void btnClose_Click(object sender, EventArgs e)
